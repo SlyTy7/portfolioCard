@@ -1,0 +1,163 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(45deg, rgba(66, 244, 155, .3), rgba(110, 37, 132, .3) ),url("../img/background-min.jpeg")center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  width: 250px;
+  opacity: .98;
+  background-color: #ffffff;
+  padding: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 7px;
+  overflow: hidden;
+  color: #313f47;
+  box-shadow: 3px 3px 10px #313f47;
+}
+
+
+/* HEADER */
+.avatar {
+  position: relative;
+  height: 150px;
+}
+
+.avatar .lines {
+  border: solid #cccccc 1px;
+  height: 5px;
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100;
+}
+
+.avatar img {
+  border-radius: 50%;
+  height: 100%;
+}
+
+.avatar img:hover {
+  opacity: .9;
+  transition: ease 1.5s;
+}
+
+
+/* NAME AND TITLE */
+h1 {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+/* SOCIAL ICONS */
+.social a {
+  text-decoration: none;
+  color: #cccccc;
+  margin: 0px 5px;
+
+}
+
+.social a:hover {
+  color: #6e2584;
+  transition: ease 1.5s;
+}
+
+
+/* FOOTER */
+.footer {
+  top: 100%;
+  left: 50%;
+  width: 250px;
+  height: 20px;
+  text-align: center;
+  transform: translate(-125px, -35px);
+  position: absolute;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 420px) {
+  .card {
+    width: 175px;
+  }
+
+  .avatar {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  .card {
+    width: 175px;
+    padding: 20px;
+  }
+
+  .avatar {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .card {
+    padding: 10px;
+  }
+
+  h1 {
+    margin-top: 10px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
